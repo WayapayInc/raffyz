@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Allow direct access to /livewire-tmp
+RewriteRule ^livewire-tmp(/.*)?$ public/livewire-tmp$1 [L]
+
+# Redirect everything else to /public
+RewriteRule ^(.*)$ public/$1 [L]
